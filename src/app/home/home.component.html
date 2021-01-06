@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+<body>
+  <button class="btn btn-info" id="logOut" (click)="logOut()">Log out</button>
+  <h1>HOME PAGE <i class="fas fa-map-marker-alt" id="myIcon"></i></h1>
+  <div class="container">
+  <form [formGroup]="homeForm">
+    <div class="form-group">
+  <select id="userSelector" style="width:100%" formControlName = "userSelector" class="form-control" id="userSelector" name="userSelector">
+   <option value=""> Choose a USER </option>
+   <option *ngFor="let user of users" value="{{user.id}}">{{user.firstName + ' '+user.lastName}}</option>
+  </select>
+  <label for="startDate">Start Date</label>
+  <input type="date" id="startDate" name="startDate"  formControlName="startDate" class="form-control">
+  <label for="endDate">End Date</label>
+  <input type="date" id="endDate" name="endDate" formContorlName="endDate" class="form-control">
+  <button type="submit" class="btn btn-info" (click)="filterLocations()" id="show">Show</button>
+</div>
+</form>
+
+</div>
+<h2>MAP</h2>
+<div class="map">
+  <div *ngIf="locations?.length > 0">
+    <agm-map>
+ <agm-marker *ngFor="let loc of locations" [latitude]="loc.latitude" [longitude]="loc.longitude">
+ </agm-marker>
+</agm-map>
+ </div>
+</div>
+
+
+</body>
+
+
+
+

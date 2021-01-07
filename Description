@@ -1,0 +1,3 @@
+The backend functionalities can be found here : https://github.com/muresandaiana/Location-Application created in Java using Springboot framework.
+This is a web application using Angular which communicates with the backend through http protocols.
+It allows login only for the admin users and only admins can acess other users locations. This means that the admin logged in can select a user from a dropdown menu, a start date and end date and visualize all the coresponding locations on a Google Map using API.

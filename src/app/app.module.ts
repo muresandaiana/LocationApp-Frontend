@@ -28,7 +28,7 @@ import { Loader } from "@googlemaps/js-api-loader"
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    AgmCoreModule.forRoot({apiKey:'AIzaSyDK1Wc6K2JsQzC8Ebl5nOWndXXrR2bcGi8'})
+    AgmCoreModule.forRoot({apiKey:'Your Google API'})
   
   ],
   providers: [AuthServiceService],

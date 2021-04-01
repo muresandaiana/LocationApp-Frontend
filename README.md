@@ -1,27 +1,6 @@
-# LocationApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Location Application - Front end
+The user has to log in. Only those with "admin" role can log in an see info about other users.
+After log in, the admin can choose a user, 2 dates and all the locations created between those dates will be shown on the map.
+<img width="739" alt="pag1" src="https://user-images.githubusercontent.com/48187656/113331036-1d087300-9328-11eb-9001-f2349df9edbb.png">
+<img width="1260" alt="pag2" src="https://user-images.githubusercontent.com/48187656/113331063-27c30800-9328-11eb-992e-e3f99f8c3dd0.png">
+<img width="1264" alt="pag3" src="https://user-images.githubusercontent.com/48187656/113331122-36112400-9328-11eb-8699-1655475936f1.png">

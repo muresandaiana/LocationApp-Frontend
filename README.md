@@ -1,4 +1,4 @@
-Location Application - Front end
+Location Application - Front-end
 ####
 The user has to log in. Only those with "admin" role can log in an see info about other users.
 ####
